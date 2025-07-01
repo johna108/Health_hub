@@ -43,14 +43,13 @@ This is a TESTING DEMO project created while learning Python. All data shown is 
 ```
 Health_hub/
   └── health_hub/
-      ├── Healthhub.py          # Main application file
-      ├── streamlit_js_eval/    # Location services support
-      └── README.md            # This file
+      ├── Healthhub.py    # Main application file
+      └── README.md       # This file
 ```
 
 ## Running the Application
 
-1. Install the required dependencies:
+1. Install the required packages:
 ```bash
 pip install streamlit streamlit-js-eval
 ```
@@ -67,6 +66,7 @@ This project has gone through several iterations based on user feedback:
 - Simplified the location services implementation
 - Removed unnecessary coordinate displays
 - Kept core functionality simple and straightforward
+- Removed unused files and dependencies
 
 ## Learning Project Details
 

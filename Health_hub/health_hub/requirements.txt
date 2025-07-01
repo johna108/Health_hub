@@ -1,4 +1,0 @@
-streamlit>=1.32.0
-streamlit-js-eval>=0.1.7
-folium>=0.14.0
-streamlit-folium>=0.15.0 
