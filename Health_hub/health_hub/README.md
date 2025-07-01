@@ -1,37 +1,89 @@
-# Streamlit-JS-Eval
+# Health Hub - Demo Healthcare Management System
 
-[![PyPI version](https://badge.fury.io/py/streamlit_js_eval.svg?service=github)](https://badge.fury.io/py/streamlit_js_eval) [![Downloads](https://static.pepy.tech/badge/streamlit-js-eval?service=github)](https://static.pepy.tech/badge/streamlit-js-eval)
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://share.streamlit.io/streamlit/corp/main](https://aghasemi-streamlit-js-eval-example-yleu91.streamlitapp.com/))
+A demonstration project showcasing a simple healthcare management system built with Python and Streamlit. This is a testing demo website created while learning Python web development.
 
+## Overview
 
-SJE is a custom Streamlit component, built to evaluate arbitrary Javascript expressions and return the result. It can become useful in doing certain functionalities which are _simple_ things in JavaScript, but unavailable or difficult to do in Streamlit. Examples include cookie management, writing to clipboard, getting device width (e.g. to check if we are on a mobile device), getting browser language, sharing something through Android's share feature, knowing user agent, etc. See [MDN docs](https://developer.mozilla.org/en-US/docs/Web/API) for more information about Web APIs. 
+Health Hub is a demo web application that simulates a healthcare facility finder and appointment booking system. It was initially created with hardcoded values for testing and learning purposes, and later improved based on user feedback to remove unnecessary complexity while maintaining core functionality.
 
-## Install
+## Features
 
-```python
-pip3 install streamlit_js_eval
+- **Hospital Finder (Demo)**
+  - Simple location-based hospital search
+  - View nearby hospitals on an embedded Google Map
+  - Basic hospital information display
+
+- **Appointment Booking**
+  - Simple appointment form
+  - Select from various medical specializations
+  - Basic appointment confirmation
+
+- **Emergency Info**
+  - Quick access to hospital contacts
+  - Basic emergency information display
+  - Hospital distance information
+
+- **Health Records**
+  - Basic health records view
+  - Simple data display
+
+## Technical Details
+
+- **Built with:**
+  - Python
+  - Streamlit (for web interface)
+  - streamlit-js-eval (for basic location services)
+
+## Important Note
+
+This is a TESTING DEMO project created while learning Python. All data shown is simulated and should not be used for actual medical purposes. The hospital information and other data are hardcoded for demonstration only.
+
+## Project Structure
+
+```
+Health_hub/
+  └── health_hub/
+      ├── Healthhub.py          # Main application file
+      ├── streamlit_js_eval/    # Location services support
+      └── README.md            # This file
 ```
 
-## Example
+## Running the Application
 
-```python
-st.write(f"Screen width is {streamlit_js_eval(js_expressions='screen.width', key = 'SCR')}")
-```
-`key` is an arbitrary but unique string, required by Streamlit components API for each call to `streamlit_js_eval`.
-
-### Common JavaScript functionalities
-
-Some more common functionalities are already implemented as Python functions. Examples include:
-
-```python
-# Returns user's location after asking for permission when the user clicks the generated link with the given text
-location = get_geolocation()
-# The URL parts of the page
-location_json = get_page_location()
+1. Install the required dependencies:
+```bash
+pip install streamlit streamlit-js-eval
 ```
 
-See `streamlit_js_eval/__init__.py` for more functions. Check a demo in `example.py` or [see it live](https://aghasemi-streamlit-js-eval-example-yleu91.streamlitapp.com/).
+2. Run the application:
+```bash
+streamlit run Healthhub.py
+```
 
-## Known Limitations
+## Development Notes
 
-- It seems calling SJE from inside a branch in Streamlit code does not work (e.g. in a loop, `if-else` block, ...)
+This project has gone through several iterations based on user feedback:
+- Initially created with hardcoded values for learning purposes
+- Simplified the location services implementation
+- Removed unnecessary coordinate displays
+- Kept core functionality simple and straightforward
+
+## Learning Project Details
+
+This project demonstrates:
+- Basic web application development with Python
+- Simple location-based services
+- Form handling
+- Basic user interface design
+
+## Disclaimer
+
+This is a demo project created for learning and testing purposes only. All data shown is simulated and should not be used for any real-world purposes.
+
+## Author
+
+Created as a personal learning project while exploring Python web development.
+
+## License
+
+This project is open source and available for learning purposes. 
